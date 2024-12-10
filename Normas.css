@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    color: rgb(252, 252, 252);
+}
+
+.normas {
+    padding: 35px; /* Relleno general en todo el cuadro */
+    margin-top: 70px; /* Margen superior */
+    margin-left: 280px; /* Margen izquierdo */
+    margin-right: 280px; /* Margen derecho */
+    margin-bottom: 130px; /* Margen inferior relativo al contenedor */
+    background-color: rgba(90, 130, 189, 0.363); /* Fondo rojo */
+    color: white; /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 10px 4px 6px rgba(0, 0, 0, 0.596); /* Sombra suave para el cuadro */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    image-resolution: 4k;
+    image-rendering: auto;
+    background-image: url('img/Fondo-Normas.png'); /* Ruta relativa a la carpeta de imágenes */
+    background-size: cover; /* La imagen cubrirá toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+}
+

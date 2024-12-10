@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Início | ChurrascoLandia</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .capa {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(33, 33, 36, 0.7);
+            z-index: 1;
+        }
+        .top-bar {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: rgba(33, 33, 36, 0.137); /* Fondo oscuro translúcido */
+            box-shadow: 15px 4px 6px rgb(54, 54, 54);
+            z-index: 3;
+        }
+        .top-bar h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .top-bar .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .top-bar button {
+            padding: 7px 10px;
+            font-size: 1em;
+            border: none;
+            background: #3e6e079d;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease, margin 0.3s ease;
+        }
+        .top-bar button:hover {
+            transform: scale(1.1); /* Agranda el botón un 10% */
+            background: #634c22; /* Cambia el color de fondo */
+            margin-right: 5px; /* Aumenta la separación */
+            margin-left: 5px;
+        }
+        .contenido {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px; /* Espacio debajo de la barra superior */
+        }
+        h3 {
+            font-size: 1.2em;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        img {
+            margin: 10px ;
+            max-width: 100%;
+            height: 300px;
+            float: left;
+            margin-left: 500px;
+            margin-top: 50px;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<link rel="icon" href="img/currascolandia.png" type="image/x-png" class="IconPage">
+<body>
+    <video muted autoplay loop>
+        <source src="videos/Video fondo2.mp4" type="video/mp4">
+    </video>
+    <div class="capa"></div>
+
+    <!-- Barra Superior -->
+    <div class="top-bar">
+        <h1>ChurrascoLandia</h1>
+        <div class="buttons">
+            <button onclick="window.open('https://discord.gg/phMyAB5y', '_blank')" class="discord-button">
+               Unete a nuestro discord
+            </button>            
+            <button onclick="abrirNormas()">Normas de la comunidad</button>
+            <button onclick="abrirCarta()" class="CartaNavidad-Button">Carta de felicitación!</button>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="contenido">
+        <h3>ChurrascoLandia es un nuevo servidor de Minecraft, la temática del servidor es muy simple. 
+            Los usuarios primero tienen que ingresar a uno de los grupos que podrás elegir al entrar a nuestro Discord. 
+            Se tienen que preparar los equipos, ¡y el último que quede en pie gana! Únete ya a nuestro Discord para ingresar a esta experiencia.
+        </h3>
+        <img src="img/currascolandia.png" alt="Logo de ChurrascoLandia" height="200px">
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function abrirNormas() {
+            window.open('NormaServer.html', '_blank');
+        }
+        /*None*/
+        function abrirSoporte() {
+            window.open('Support.html', '_blank');
+        }
+        function abrirCarta() {
+            window.open('Carta-Navideña.html', '_blank');
+        }
+    </script>
+</body>
+</html>
